@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="fr.icodem.lernado.fx.views.login.LoginPresenter"
+            prefHeight="400.0" prefWidth="600.0" fx:id="rootPane">
+
+    <Label text="LOGIN" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10"/>
+
+    <TextField fx:id="usernameTextField" promptText="Enter your username"
+               AnchorPane.leftAnchor="10" AnchorPane.topAnchor="50"/>
+    <PasswordField fx:id="passwordTextField" promptText="Enter your password"
+                   AnchorPane.leftAnchor="10" AnchorPane.topAnchor="80"/>
+    <Button text="Sign In" onAction="#login" defaultButton="true"
+            AnchorPane.leftAnchor="10" AnchorPane.topAnchor="110"/>
+
+    <Label fx:id="errorLabel" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="140"/>
+
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="fr.icodem.lernado.fx.views.home.HomePresenter"
+            prefHeight="400.0" prefWidth="600.0" fx:id="rootPane">
+
+    <Label text="HOME" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10"/>
+
+    <HBox AnchorPane.leftAnchor="10" AnchorPane.topAnchor="50">
+        <TextField fx:id="queryTextField" promptText="Search courses"/>
+        <Button fx:id="searchButton" text="Search" defaultButton="true" onAction="#search"/>
+    </HBox>
+
+    <Label text="HIGHLIGHTS" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="100"/>
+
+</AnchorPane>
