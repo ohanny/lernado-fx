@@ -36,7 +36,6 @@
     <build>
         <defaultGoal>clean package</defaultGoal>
         <plugins>
-            <!-- packaging comme afterburnerfx -->
             <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>3.0.2</version>
