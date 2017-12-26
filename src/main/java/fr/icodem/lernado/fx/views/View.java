@@ -33,7 +33,7 @@ public abstract class View {
                 pane = loader.load();
                 addResources();
             } catch (IOException e) {
-                throw new RuntimeException("Failed loading FXML : " + getClass());
+                throw new RuntimeException("Failed loading FXML : " + getClass(), e);
             }
         }
         return pane;
