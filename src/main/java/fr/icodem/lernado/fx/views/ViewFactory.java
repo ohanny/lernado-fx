@@ -1,8 +1,6 @@
 package fr.icodem.lernado.fx.views;
 
-import com.google.common.base.CaseFormat;
 import com.google.inject.Injector;
-import fr.icodem.lernado.fx.exceptions.ViewException;
 
 import javax.inject.Inject;
 
