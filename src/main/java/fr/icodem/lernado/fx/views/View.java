@@ -17,6 +17,7 @@ public abstract class View {
     private Parent pane;
     private String resourceName;
     private ResourceBundle bundle;
+    private Object presenter;
 
     @Inject @Named("app.name") private String appName;
 
@@ -32,6 +33,7 @@ public abstract class View {
             try {
                 pane = loader.load();
                 addResources();
+                presenter = loader.getController();
             } catch (IOException e) {
                 throw new RuntimeException("Failed loading FXML : " + getClass(), e);
             }
@@ -92,5 +94,9 @@ public abstract class View {
             String title = getProperty(getTitleKey());
             stage.setTitle(appName + " - " + title);
         } catch (Exception e) {}
+    }
+
+    public Object getPresenter() {
+        return presenter;
     }
 }
