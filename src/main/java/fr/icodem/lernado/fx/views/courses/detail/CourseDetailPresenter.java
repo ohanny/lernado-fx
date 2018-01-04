@@ -1,8 +1,8 @@
 package fr.icodem.lernado.fx.views.courses.detail;
 
 import com.google.common.eventbus.Subscribe;
-import fr.icodem.lernado.fx.LernadoContext;
-import fr.icodem.lernado.fx.Router;
+import fr.icodem.lernado.fx.context.LernadoContext;
+import fr.icodem.lernado.fx.context.Router;
 import fr.icodem.lernado.fx.events.ShowCourseDetailEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

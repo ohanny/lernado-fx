@@ -1,8 +1,8 @@
 package fr.icodem.lernado.fx.views.login;
 
 import com.google.common.base.Strings;
-import fr.icodem.lernado.fx.LernadoContext;
-import fr.icodem.lernado.fx.Router;
+import fr.icodem.lernado.fx.context.LernadoContext;
+import fr.icodem.lernado.fx.context.Router;
 import fr.icodem.lernado.fx.domain.User;
 import fr.icodem.lernado.fx.services.UserService;
 import javafx.fxml.FXML;

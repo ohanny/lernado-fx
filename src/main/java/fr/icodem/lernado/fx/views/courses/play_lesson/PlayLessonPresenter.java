@@ -1,7 +1,7 @@
 package fr.icodem.lernado.fx.views.courses.play_lesson;
 
-import fr.icodem.lernado.fx.LernadoContext;
-import fr.icodem.lernado.fx.Router;
+import fr.icodem.lernado.fx.context.LernadoContext;
+import fr.icodem.lernado.fx.context.Router;
 import javafx.fxml.Initializable;
 
 import javax.inject.Inject;

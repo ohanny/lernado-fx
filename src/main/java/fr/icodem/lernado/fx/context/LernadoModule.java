@@ -1,4 +1,4 @@
-package fr.icodem.lernado.fx;
+package fr.icodem.lernado.fx.context;
 
 import com.google.common.eventbus.EventBus;
 import com.google.inject.AbstractModule;
@@ -32,10 +32,17 @@ public class LernadoModule extends AbstractModule {
             .annotatedWith(Names.named("app.name"))
             .to("Lernado");
 
-        bind(EventBus.class).toInstance(new EventBus());
+
+        // navigation scope
+        NavigationScope navigationScope = new NavigationScope();
+        bindScope(NavigationScoped.class, navigationScope);
+        bind(NavigationScope.class).toInstance(navigationScope);
 
         bind(LernadoInjector.class).toInstance(LernadoInjector.Instance);
         bind(LernadoContext.class).in(Singleton.class);
+
+        bind(EventBus.class).toInstance(new EventBus());
+        bind(NavigationEventBus.class).in(NavigationScoped.class);
 
         bind(Stage.class).toInstance(stage);
         bind(ViewFactory.class).toInstance(new LernadoViewFactory());
@@ -58,6 +65,7 @@ public class LernadoModule extends AbstractModule {
         bind(SearchCoursePresenter.class);
         bind(CourseDetailPresenter.class);
         bind(PlayLessonPresenter.class);
+
     }
 
 }

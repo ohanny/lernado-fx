@@ -1,14 +1,12 @@
 package fr.icodem.lernado.fx.views.courses.search;
 
 import com.google.common.eventbus.Subscribe;
-import fr.icodem.lernado.fx.LernadoContext;
-import fr.icodem.lernado.fx.Router;
+import fr.icodem.lernado.fx.context.LernadoContext;
+import fr.icodem.lernado.fx.context.Router;
 import fr.icodem.lernado.fx.domain.Course;
 import fr.icodem.lernado.fx.events.SearchCourseResultEvent;
 import fr.icodem.lernado.fx.events.ShowCourseDetailEvent;
 import fr.icodem.lernado.fx.services.CourseService;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

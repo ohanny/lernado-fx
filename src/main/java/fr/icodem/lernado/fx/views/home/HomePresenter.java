@@ -1,7 +1,7 @@
 package fr.icodem.lernado.fx.views.home;
 
-import fr.icodem.lernado.fx.LernadoContext;
-import fr.icodem.lernado.fx.Router;
+import fr.icodem.lernado.fx.context.LernadoContext;
+import fr.icodem.lernado.fx.context.Router;
 import fr.icodem.lernado.fx.domain.Course;
 import fr.icodem.lernado.fx.events.SearchCourseResultEvent;
 import fr.icodem.lernado.fx.services.CourseService;

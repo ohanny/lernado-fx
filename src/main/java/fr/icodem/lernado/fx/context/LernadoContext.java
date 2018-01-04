@@ -1,4 +1,4 @@
-package fr.icodem.lernado.fx;
+package fr.icodem.lernado.fx.context;
 
 import com.google.common.eventbus.EventBus;
 import javafx.application.Platform;

@@ -1,4 +1,4 @@
-package fr.icodem.lernado.fx;
+package fr.icodem.lernado.fx.context;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;

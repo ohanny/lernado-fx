@@ -1,7 +1,7 @@
 package fr.icodem.lernado.fx.views;
 
 import com.google.common.base.CaseFormat;
-import fr.icodem.lernado.fx.LernadoInjector;
+import fr.icodem.lernado.fx.context.LernadoInjector;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
@@ -100,5 +100,4 @@ public abstract class View {
         return presenter;
     }
 
-    public void setData(Object data) {}
 }
