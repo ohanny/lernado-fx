@@ -99,4 +99,6 @@ public abstract class View {
     public Object getPresenter() {
         return presenter;
     }
+
+    public void setData(Object data) {}
 }
